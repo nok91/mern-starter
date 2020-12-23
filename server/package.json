@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "babel src --out-dir dist",
+    "start": "npm run build && node dist/index.js",
+    "build": "npm run clean && babel src --out-dir dist",
     "dev": "nodemon --exec babel-node src/index.js",
     "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
     "lint": "eslint --fix --ext .js,.jsx ."
