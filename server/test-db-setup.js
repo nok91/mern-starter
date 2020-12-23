@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import cuid from 'cuid';
 import map from 'lodash/map';
 import dotenv from 'dotenv';
-import env from './src/config/env';
+import './src/config/env';
 import Room from './src/resources/room/room.model';
 import Task from './src/resources/task/task.model';
 
