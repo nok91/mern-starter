@@ -6,6 +6,8 @@ const resolve = (filename) => path.resolve(__dirname, filename);
 const envName =
   (yargs && yargs.argv && yargs.argv.env) || process.env.NODE_ENV || 'dev';
 
+console.log({ envName });
+
 /**
  * Loads environment variables from .env files.
  *

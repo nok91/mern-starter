@@ -45,8 +45,12 @@
     "verbose": true,
     "testURL": "http://localhost/",
     "testEnvironment": "node",
-    "setupFiles": ["dotenv/config"],
-    "setupFilesAfterEnv": ["./test-db-setup.js"],
+    "setupFiles": [
+      "dotenv/config"
+    ],
+    "setupFilesAfterEnv": [
+      "./test-db-setup.js"
+    ],
     "testPathIgnorePatterns": [
       "dist/"
     ],

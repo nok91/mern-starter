@@ -23,7 +23,7 @@ describe('Task model', () => {
     test('room', () => {
       const { room } = Task.schema.obj;
       expect(room).toEqual({
-        type: mongoose.SchemaTypes.ObjectId,
+        type: mongoose.Schema.Types,
         ref: 'Room',
         required: true
       });

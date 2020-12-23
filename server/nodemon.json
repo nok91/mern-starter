@@ -17,7 +17,7 @@
       "src/**/*.gql"
     ],
     "env": {
-      "NODE_ENV": "development"
+      "NODE_ENV": "dev"
     },
     "ext": "js,json,graphql"
   }
