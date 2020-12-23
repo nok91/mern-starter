@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:3050';
+const API_URL = 'https://my-to-do-minimal.herokuapp.com/';
 
 async function createRoom(name) {
     try {
