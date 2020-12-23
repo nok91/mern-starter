@@ -4,7 +4,6 @@ const API_URL = 'http://localhost:3050';
 async function createRoom(name) {
     try {
         const response = await axios.post(`${API_URL}/room`, { title: name});
-        console.log('updateTask ', response.data)
 
         return response.data
     } catch (error) {

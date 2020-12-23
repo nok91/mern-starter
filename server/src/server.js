@@ -19,16 +19,14 @@ app.use('/room', roomRouter);
 app.use('/task', taskRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello To My-To-Do APIS');
+  res.send('My-To-Do APIS v1.0');
 });
-
-const PORT = process.env.PORT || 3000;
 
 const start = async () => {
   try {
     await connect();
-    app.listen(PORT, () => {
-      console.log(`REST API on http://localhost:${PORT}`);
+    app.listen(config.PORT, () => {
+      console.log(`REST API on ${config.APP_ORIGIN}:${config.PORT}`);
     });
   } catch (error) {
     console.error(error.message);

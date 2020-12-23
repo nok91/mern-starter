@@ -12,7 +12,6 @@ function Home() {
     const handleCreateRoom = async () => {
         const data = await createRoom(getTitle);
         history.push(`${room}/${data['_id']}`)
-        console.log(data)
     }
 
     const onInputChange = (event) => {

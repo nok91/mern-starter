@@ -6,8 +6,6 @@ const resolve = (filename) => path.resolve(__dirname, filename);
 const envName =
   (yargs && yargs.argv && yargs.argv.env) || process.env.NODE_ENV || 'dev';
 
-console.log({ envName });
-
 /**
  * Loads environment variables from .env files.
  *
@@ -24,7 +22,9 @@ function load(envArg = 'dev') {
 
   Object.assign(process.env, env);
 
-  return { ...env };
+  const PORT = process.env.PORT || 3000;
+
+  return { ...env, PORT };
 }
 
 export default load(envName);

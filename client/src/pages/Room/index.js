@@ -56,7 +56,6 @@ function Room(props) {
         return(<p>Error: {error}...</p>)
     }
 
-    console.log({ data })
     return (
        <div className={styles.room}>
              <div className={styles.create}>
