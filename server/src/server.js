@@ -22,11 +22,13 @@ app.get('/', (req, res) => {
   res.send('Hello To My-To-Do APIS');
 });
 
+const PORT = process.env.PORT || 3000;
+
 const start = async () => {
   try {
     await connect();
-    app.listen(config.PORT, () => {
-      console.log(`REST API on http://localhost:${config.PORT}`);
+    app.listen(PORT, () => {
+      console.log(`REST API on http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error(error.message);
