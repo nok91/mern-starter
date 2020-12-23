@@ -1,0 +1,19 @@
+{
+  "name": "mern-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix frontend-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nok91/mern-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nok91/mern-starter/issues"
+  },
+  "homepage": "https://github.com/nok91/mern-starter#readme"
+}
